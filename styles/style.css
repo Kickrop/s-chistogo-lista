@@ -15,16 +15,20 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
 
 .content-section {
     width: 360px;
-    margin: 0 auto;
+	max-width: 320%;
+	min-height: 100 360%;
+    margin: auto;
     box-sizing: border-box;
 }
 
 .content-section_theme_dark {
     background-color: #131313;
+	box-sizing: border-box;
 }
 
 .content-section_theme_bright {
     background-color: #FEE42A;
+	box-sizing: border-box;
 }
 
 header {
@@ -32,6 +36,12 @@ header {
     padding: 24px 20px;
     display: flex;
     justify-content: space-between;
+	align-items: flex-start;
+}
+
+.header__logo { 
+	display: block;
+	width: 78px;
 }
 
 .header__menu {
@@ -43,6 +53,7 @@ header {
 .header__menu-list {
     display: flex;
     height: 84px;
+	gap: 12px;
     justify-content: space-between;
     flex-direction: column;
 }
@@ -64,7 +75,7 @@ header {
 #cover {
     background: #131313 url("../images/cover.svg") no-repeat right center;
     background-size: 95% auto;
-    padding: 7px 20px 30px;
+    padding: 7px 24px 32px 20px;
     min-height: 198px;
 }
 
@@ -99,15 +110,18 @@ h1 span {
     color: #CCCCCC;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
+	gap: 22px;
+	font-size: 16px;
 }
 
 .intro__main-text {
     color: #F5F5F5;
-    /* display: flex;
-    flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	line-height: 1.35;
+	gap: 24px;
+	margin-top: 24px;
 }
 
 .intro__date {
@@ -115,7 +129,7 @@ h1 span {
 }
 
 #reasons {
-    padding: 40px 20px 39px;
+    padding: 40px 20px 0px;
 }
 
 /* .content-section__subtitle {
@@ -153,7 +167,7 @@ h1 span {
 }
 
 #how-to {
-    padding: 40px 20px 32px;
+    padding: 40px 20px 0px;
 }
 
 h4 span {
